@@ -1,0 +1,17 @@
+404.html
+about/index.html
+author/thedonamin/index.html
+business-consulting/index.html
+category/insights/index.html
+executive-profile/index.html
+index.html
+insights/index.html
+operations-consulting/index.html
+resources/index.html
+what-can-ai-change-and-what-might-eventually-slow-it-down/index.html
+wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js
+wp-content/themes/astra/assets/css/minified/main.min.css
+wp-content/themes/astra/assets/js/minified/frontend.min.js
+wp-content/uploads/2026/05/LinkedIn-Profile-scaled.jpg
+wp-includes/js/comment-reply.min.js
+wp-includes/js/dist/dom-ready.min.js

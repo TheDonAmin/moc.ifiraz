@@ -1,0 +1,14 @@
+# Leading slashes matter: an unanchored "dist/" would also swallow the
+# vendor paths wp-includes/js/dist/ and .../assets/dist/ that the site needs.
+
+# Raw Simply Static export (~148 MB, 99% unused WordPress assets).
+# Only the files the pages actually reference are kept, in src/.
+/site/
+
+# Superseded by docs/
+/dist/
+
+# Export archives
+/*.zip
+
+node_modules/

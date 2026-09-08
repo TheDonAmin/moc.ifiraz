@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Amin Zarifi",
+    "domain": "https://aminzarifi.com",
+    "image": "https://aminzarifi.com/wp-content/uploads/2026/05/LinkedIn-Profile-scaled.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "pages": {
+    "index.html": {
+      "type": "website",
+      "description": "Amin Zarifi - Director of Operations at Snapp!Market. 11+ years designing operational platforms, automated coverage systems, and scalable execution frameworks."
+    },
+    "about/index.html": {
+      "type": "profile",
+      "description": "Beyond operating systems and org charts: curiosity about how things work, road trips, poetry, and why building systems became a hobby as much as a job."
+    },
+    "executive-profile/index.html": {
+      "type": "profile",
+      "description": "Career timeline of Amin Zarifi - from Industrial Engineering and startup consulting in 2014 to C-level operations leadership in Q-commerce and retail at scale."
+    },
+    "insights/index.html": {
+      "type": "website",
+      "description": "Short, practical notes from Amin Zarifi on business systems, operations, technology, leadership, and the thinking frameworks behind them."
+    },
+    "category/insights/index.html": {
+      "type": "website",
+      "description": "All Insights posts by Amin Zarifi - notes on operations, business systems, technology, leadership, and thinking frameworks."
+    },
+    "what-can-ai-change-and-what-might-eventually-slow-it-down/index.html": {
+      "type": "article",
+      "description": "AI changes organizations faster than it changes technology - reshaping company economics, labor pricing, and the distance between decision and execution."
+    },
+    "author/thedonamin/index.html": {
+      "noindex": true,
+      "description": "Posts by Amin Zarifi."
+    },
+    "404.html": {
+      "noindex": true,
+      "description": "Page not found."
+    }
+  }
+}
