@@ -61,10 +61,18 @@ for (const rel of pages.sort()) {
     skipped.push(rel);
   } else if (!/<meta name="description"/i.test(html)) {
     const title = decodeEntities((html.match(/<title>([\s\S]*?)<\/title>/i) || [, name])[1].trim());
-    const canonical = (html.match(/<link rel="canonical" href="([^"]+)"/i) || [, domain + '/'])[1];
+    const ownUrl = domain + '/' + rel.replace(/index\.html$/, '').replace(/\.html$/, '');
+
+    // A few pages (category/author archives, 404) never had a canonical tag
+    // in the WordPress export - falling back to the homepage here silently
+    // pointed their og:url at the wrong page, so build one from the page's
+    // own path instead and add the missing <link rel="canonical"> too.
+    const existingCanonical = html.match(/<link rel="canonical" href="([^"]+)">/i);
+    const canonical = existingCanonical ? existingCanonical[1] : ownUrl;
     const desc = meta.description;
 
     const tags = [
+      existingCanonical ? null : `<link rel="canonical" href="${attr(canonical)}">`,
       `<meta name="description" content="${attr(desc)}">`,
       meta.noindex ? '<meta name="robots" content="noindex, follow">' : null,
       `<meta property="og:type" content="${meta.type || 'website'}">`,
