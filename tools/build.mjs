@@ -38,6 +38,10 @@ execFileSync('node', ['tools/apply-seo.mjs'], { stdio: 'inherit' });
 step("making paths root-relative");
 execFileSync("node", ["tools/relativize.mjs"], { stdio: "inherit" });
 
+// --- 3c. structured data --------------------------------------------------
+step('adding JSON-LD structured data');
+execFileSync('node', ['tools/add-jsonld.mjs'], { stdio: 'inherit' });
+
 // --- 4. sitemap ------------------------------------------------------------
 // Only pages that are indexable and actually have content: anything without a
 // seo.json entry is a blank page, and noindex pages don't belong in a sitemap.
