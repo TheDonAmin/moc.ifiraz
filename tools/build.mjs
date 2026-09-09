@@ -42,6 +42,24 @@ execFileSync("node", ["tools/relativize.mjs"], { stdio: "inherit" });
 step('adding JSON-LD structured data');
 execFileSync('node', ['tools/add-jsonld.mjs'], { stdio: 'inherit' });
 
+// --- 3d. redirects -----------------------------------------------------
+// Some pages (e.g. the WordPress category archive) are only kept around
+// because another build step reads them as a data source - they duplicate a
+// nicer hand-built page and shouldn't be served as-is. Overwrite their
+// output with a plain redirect rather than shipping the duplicate.
+step('writing redirect pages');
+for (const [rel, meta] of Object.entries(cfg.pages)) {
+  if (!meta.redirectTo) continue;
+  const target = DOMAIN + meta.redirectTo;
+  fs.writeFileSync('docs/' + rel,
+    '<!doctype html>\n<html lang="en"><head><meta charset="UTF-8">\n' +
+    '<meta http-equiv="refresh" content="0; url=' + target + '">\n' +
+    '<link rel="canonical" href="' + target + '">\n' +
+    '<title>Redirecting…</title></head>\n' +
+    '<body>Redirecting to <a href="' + target + '">' + target + '</a>.</body></html>\n');
+  console.log('  ' + rel + '  ->  ' + meta.redirectTo);
+}
+
 // --- 4. sitemap ------------------------------------------------------------
 // Only pages that are indexable and actually have content: anything without a
 // seo.json entry is a blank page, and noindex pages don't belong in a sitemap.
@@ -52,8 +70,9 @@ const omitted = [];
 for (const rel of fs.readdirSync('docs', { recursive: true }).map((s) => String(s).split(path.sep).join('/'))) {
   if (!rel.endsWith('.html')) continue;
   const meta = cfg.pages[rel];
-  if (!meta)          { omitted.push(rel + '  (no content)'); continue; }
-  if (meta.noindex)   { omitted.push(rel + '  (noindex)');    continue; }
+  if (!meta)           { omitted.push(rel + '  (no content)'); continue; }
+  if (meta.redirectTo) { omitted.push(rel + '  (redirects to ' + meta.redirectTo + ')'); continue; }
+  if (meta.noindex)    { omitted.push(rel + '  (noindex)');    continue; }
   urls.push(DOMAIN + '/' + rel.replace(/index\.html$/, '').replace(/\.html$/, ''));
 }
 urls.sort();

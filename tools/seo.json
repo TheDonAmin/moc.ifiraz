@@ -32,7 +32,8 @@
     },
     "category/insights/index.html": {
       "type": "website",
-      "description": "All Insights posts by Amin Zarifi - notes on operations, business systems, technology, leadership, and thinking frameworks."
+      "description": "All Insights posts by Amin Zarifi - notes on operations, business systems, technology, leadership, and thinking frameworks.",
+      "redirectTo": "/insights/"
     },
     "what-can-ai-change-and-what-might-eventually-slow-it-down/index.html": {
       "type": "article",
