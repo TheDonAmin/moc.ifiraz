@@ -601,6 +601,19 @@ body {
   display: grid;
   gap: 18px;
   margin-bottom: 34px;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* the rail connecting every stage into one sequence */
+.az-timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, #2563eb, rgba(37,99,235,.15));
 }
 
 .az-timeline-item {
@@ -614,12 +627,42 @@ body {
   box-shadow:
     0 1px 2px rgba(15,23,42,.03),
     0 14px 36px rgba(30,64,175,.06);
+  position: relative;
+}
+
+/* node marking this stage's place on the rail */
+.az-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,.16);
+}
+
+.az-timeline-item--current::before {
+  background: #16a34a;
+  box-shadow: 0 0 0 4px rgba(22,163,74,.18);
+  animation: az-pulse 2.2s ease-out infinite;
+}
+
+@keyframes az-pulse {
+  0%   { box-shadow: 0 0 0 4px rgba(22,163,74,.18); }
+  70%  { box-shadow: 0 0 0 10px rgba(22,163,74,0); }
+  100% { box-shadow: 0 0 0 4px rgba(22,163,74,0); }
 }
 
 .az-timeline-year {
   color: #2563eb;
   font-size: 15px;
   font-weight: 850;
+}
+
+.az-timeline-item--current .az-timeline-year {
+  color: #16a34a;
 }
 
 .az-timeline-content h2,
@@ -688,8 +731,23 @@ body {
   margin-left: auto;
 }
 
+#az-profile-fa .az-timeline {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+#az-profile-fa .az-timeline::before {
+  left: auto;
+  right: 7px;
+}
+
 #az-profile-fa .az-timeline-item {
   grid-template-columns: 1fr 170px;
+}
+
+#az-profile-fa .az-timeline-item::before {
+  left: auto;
+  right: -30px;
 }
 
 #az-profile-fa .az-timeline-year {
@@ -904,6 +962,35 @@ textarea {
   .az-profile-section {
     padding: 22px;
     border-radius: 22px;
+  }
+
+  .az-timeline {
+    padding-left: 18px;
+  }
+
+  #az-profile-fa .az-timeline {
+    padding-left: 0;
+    padding-right: 18px;
+  }
+
+  .az-timeline::before {
+    left: 4px;
+  }
+
+  #az-profile-fa .az-timeline::before {
+    left: auto;
+    right: 4px;
+  }
+
+  .az-timeline-item::before {
+    left: -18px;
+    width: 10px;
+    height: 10px;
+  }
+
+  #az-profile-fa .az-timeline-item::before {
+    left: auto;
+    right: -18px;
   }
 
   .az-timeline-content h2 {
@@ -1295,7 +1382,7 @@ Participated in large-scale growth environments requiring both operational disci
 
 </div>
 
-<div class="az-timeline-item">
+<div class="az-timeline-item az-timeline-item--current">
 
 <div class="az-timeline-year">
 2024–Present
@@ -1462,7 +1549,7 @@ My work sits at the intersection of operations, business systems, and execution.
 
 </div>
 
-<div class="az-timeline-item">
+<div class="az-timeline-item az-timeline-item--current">
 
 <div class="az-timeline-year">
 ۱۴۰۳–امروز
