@@ -241,6 +241,14 @@ body {
   box-shadow: 0 6px 16px rgba(30,64,175,.10) !important;
 }
 
+.az-hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
 /* HOME HERO */
 
 .az-hero-compact {
@@ -1184,15 +1192,90 @@ textarea {
 				<header class="entry-header ast-no-thumbnail">
 				<h1 class="entry-title" itemprop="headline">Home</h1>			</header> <!-- .entry-header -->
 		
-<div class="entry-content clear" data-ast-blocks-layout="true" itemprop="text" dir="rtl" lang="fa">
+<div class="entry-content clear" data-ast-blocks-layout="true" itemprop="text">
 
 	
 	
 <div class="az-hero-compact">
 
+<div class="az-hero-top">
 <div class="az-badge">
-امین ظریفی · مدیر عملیات، تکنولوژی و کسب‌وکار
+Amin Zarifi · Operations, Technology &amp; Business Executive
 </div>
+
+<div class="az-language-toggle">
+<button type="button" class="az-lang-btn active" onclick="azShowHomeLang('en')">
+English
+</button>
+<button type="button" class="az-lang-btn" onclick="azShowHomeLang('fa')">
+فارسی
+</button>
+</div>
+</div>
+
+<div id="az-home-en" class="az-lang-section active">
+
+<h1>
+Operations, Technology, and Business Leadership at Scale
+</h1>
+
+<p>
+I’m Amin Zarifi. I design the technology systems that operations run on. Over 11+ years in business, the last 5 as a C-level executive, I’ve built automated coverage systems, operational platforms, and end-to-end frameworks that run scheduled delivery, Q-commerce, and B2B business lines at Snapp!Market — across retail, marketplace, and consignment models. That technical and operational depth sits alongside real exposure to the investor and CEO side of running a business, so I don’t just build the system — I understand what it needs to prove to the board. Today, I’m Director of Operations at Snapp!Market.
+</p>
+
+<div class="az-hero-panels">
+
+<details>
+<summary>
+<span class="az-panel-title">What this site covers</span>
+<span class="az-panel-desc">Technology leadership, operations and supply chain execution, and the executive perspective behind scaling a business.</span>
+</summary>
+<p>
+This site is built around three things I bring together: the technology systems I’ve designed and led — automation, coverage management, and operational platforms — my experience running large-scale operations and supply chain functions, and executive/investor-level exposure to how businesses are built, funded, and grown. Beyond business and technology, I also write about better living, clearer thinking, and building a calmer mind.
+</p>
+</details>
+
+<details>
+<summary>
+<span class="az-panel-title">Who it is for</span>
+<span class="az-panel-desc">For operators, founders, executives, technologists, and anyone building better systems.</span>
+</summary>
+<p>
+This site can be useful for anyone working in a business with revenue, cost, customers, processes, technology systems, and execution challenges. The non-operational section is broader and focuses on ideas around life, mindset, discipline, and personal clarity.
+</p>
+</details>
+
+<details>
+<summary>
+<span class="az-panel-title">How to use it</span>
+<span class="az-panel-desc">Follow my executive profile, technology work, advisory, and practical notes.</span>
+</summary>
+<p>
+Start with my Executive Profile to see the full track record and the systems I’ve designed and led, check Business or Operations Consulting if you’re looking to work together, or Insights for practical notes on operations, technology, business, and life.
+</p>
+</details>
+
+<details>
+<summary>
+<span class="az-panel-title">Contact me</span>
+<span class="az-panel-desc">Mentorship, SME business advisory, and corporate operations projects.</span>
+</summary>
+<p>
+You can reach out for career mentorship, business advisory for small and mid-sized companies, or operations and supply chain improvement projects for larger organizations and corporate teams.
+<br><br>
+Email:<br>
+<a href="mailto:M.Amin.Zarifi@gmail.com">M.Amin.Zarifi@gmail.com</a>
+<br><br>
+LinkedIn:<br>
+<a href="https://linkedin.com/in/amin-zarifi" target="_blank">linkedin.com/in/amin-zarifi</a>
+</p>
+</details>
+
+</div>
+
+</div>
+
+<div id="az-home-fa" class="az-lang-section" dir="rtl" lang="fa">
 
 <h1>
 رهبری عملیات، تکنولوژی و کسب‌وکار در مقیاس
@@ -1254,7 +1337,38 @@ textarea {
 
 </div>
 
-<div class="az-grid">
+</div>
+
+<div class="az-grid" id="az-grid-en">
+
+<a class="az-card" href="/insights">
+<h2>Insights</h2>
+<p>Business, operations, and life notes</p>
+</a>
+
+<a class="az-card" href="/resources">
+<h2>Resources &amp; Playbooks</h2>
+<p>Templates, tools, and structured guides</p>
+</a>
+
+<a class="az-card" href="/executive-profile">
+<h2>Executive Profile</h2>
+<p>Experience, scale, and leadership track record</p>
+</a>
+
+<a class="az-card az-feature" href="/operations-consulting">
+<h2>Operations Consulting</h2>
+<p>For large companies and corporate teams</p>
+</a>
+
+<a class="az-card az-feature" href="/business-consulting">
+<h2>Business Consulting</h2>
+<p>For SMEs and mid-size companies</p>
+</a>
+
+</div>
+
+<div class="az-grid" id="az-grid-fa" dir="rtl" style="display:none">
 
 <a class="az-card" href="/insights">
 <h2>یادداشت‌ها</h2>
@@ -1287,23 +1401,51 @@ textarea {
 
 <div class="az-section-header">
 <div>
-<span class="az-section-kicker">آخرین نوشته‌ها</span>
-<h2>یادداشت‌های اخیر</h2>
+<span class="az-section-kicker">Latest Thinking</span>
+<h2>Latest Notes</h2>
 </div>
-<a href="/insights" class="az-view-all">مشاهده‌ی همه‌ی یادداشت‌ها</a>
+<a href="/insights" class="az-view-all">View all insights</a>
 </div>
 
 <div id="az-latest-posts" class="az-latest-grid">
 <a class="az-latest-card" href="/what-can-ai-change-and-what-might-eventually-slow-it-down/">
 <span>May 21, 2026</span>
 <h3>What Can AI Change, and What Might Eventually Slow It Down?</h3>
-<p>AI فقط تکنولوژی را تغییر نمی‌دهد. AI در حال تغییر اقتصاد شرکت‌هاست.</p>
+<p>AI is not just changing technology. It is changing the economics of companies.</p>
 </a>
 </div>
 
 </section>
 
 
+
+<script>
+function azShowHomeLang(lang) {
+  const en = document.getElementById("az-home-en");
+  const fa = document.getElementById("az-home-fa");
+  const gridEn = document.getElementById("az-grid-en");
+  const gridFa = document.getElementById("az-grid-fa");
+  const buttons = document.querySelectorAll(".az-hero-top .az-lang-btn");
+
+  if (!en || !fa || buttons.length < 2) return;
+
+  if (lang === "fa") {
+    en.classList.remove("active");
+    fa.classList.add("active");
+    gridEn.style.display = "none";
+    gridFa.style.display = "grid";
+    buttons[0].classList.remove("active");
+    buttons[1].classList.add("active");
+  } else {
+    fa.classList.remove("active");
+    en.classList.add("active");
+    gridFa.style.display = "none";
+    gridEn.style.display = "grid";
+    buttons[1].classList.remove("active");
+    buttons[0].classList.add("active");
+  }
+}
+</script>
 
 
 

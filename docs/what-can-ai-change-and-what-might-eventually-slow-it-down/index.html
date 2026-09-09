@@ -1335,8 +1335,63 @@ AI changes organizations faster than it changes technology.
 
 </header>
 
+<div class="az-insight-toggle" translate="no">
 
-<section id="az-insight-fa" class="az-insight-body active" dir="rtl" lang="fa">
+<button type="button" class="az-insight-toggle-btn active" onclick="azShowInsightLang('en')">
+English
+</button>
+
+<button type="button" class="az-insight-toggle-btn" onclick="azShowInsightLang('fa')">
+فارسی
+</button>
+
+</div>
+
+<section id="az-insight-en" class="az-insight-body active">
+
+<p>
+AI is not just changing technology. It is changing the economics of companies.
+</p>
+
+<p>
+It will change how companies are structured, how labor is priced, and how productivity is measured. One of its most important effects is that it reduces the distance between decision-making and execution. Analysis, planning, writing, coding, reporting, and operational control can happen faster, with fewer layers between thinking and doing.
+</p>
+
+<p>
+At the macro level, the impact can be even deeper. AI changes the relationship between labor, capital, and productivity. If intelligence becomes cheaper and more available, economic power will shift toward the layers that control the infrastructure behind it: energy, chips, data centers, models, platforms, and applications.
+</p>
+
+<p>
+One framework I found useful, originally discussed by Peter Thiel, views AI value creation as a stack: energy infrastructure, semiconductors, data centers, foundation models, platforms, and applications. The layer we usually see is the application. But the strategic layer is often hidden underneath. The deeper the layer, the harder it is to replace, and the more structural power it can create.
+</p>
+
+<p>
+This is why I believe energy will remain one of the most fundamental industries in the AI era. AI can automate mental work, accelerate software, redesign organizations, and transform services. But it cannot escape the physical world. Intelligence still needs computation. Computation needs chips. Chips need data centers. Data centers need electricity.
+</p>
+
+<p>
+Maybe biology gives us a clue here.
+</p>
+
+<p>
+The human brain does not contain the same volume of stored information as modern large language models, but it is still an intelligent system. It learns, reacts, predicts, and makes decisions with an extremely low amount of energy compared with modern AI infrastructure.
+</p>
+
+<p>
+Even a fly can see its surroundings, process signals, avoid threats, move through space, and make decisions almost instantly. Nature has already built intelligence with incredible energy efficiency.
+</p>
+
+<p>
+That may be one of the most important lessons for the future of AI. If we can understand and replicate even a small part of that efficiency, the biggest constraint of AI may not disappear, but it can become much smaller.
+</p>
+
+<p class="az-insight-closing">
+The long-term race in AI may not only be about intelligence itself. It may be about discovering how nature achieved intelligence with extraordinary efficiency.
+</p>
+
+</section>
+
+<section id="az-insight-fa" class="az-insight-body" dir="rtl" lang="fa">
 
 <h2>
 AI چه چیزی را تغییر می‌دهد و چه چیزی ممکن است سرعتش را کم کند؟
@@ -1386,9 +1441,30 @@ AI ساختار شرکت‌ها، قیمت‌گذاری نیروی کار، و �
 
 </article>
 
+<script>
+function azShowInsightLang(lang) {
+  const en = document.getElementById("az-insight-en");
+  const fa = document.getElementById("az-insight-fa");
+  const buttons = document.querySelectorAll(".az-insight-toggle-btn");
 
-		
-		
+  if (!en || !fa || buttons.length < 2) return;
+
+  if (lang === "fa") {
+    en.classList.remove("active");
+    fa.classList.add("active");
+    buttons[0].classList.remove("active");
+    buttons[1].classList.add("active");
+  } else {
+    fa.classList.remove("active");
+    en.classList.add("active");
+    buttons[1].classList.remove("active");
+    buttons[0].classList.add("active");
+  }
+}
+</script>
+
+
+
 			</div><!-- .entry-content .clear -->
 </div>
 

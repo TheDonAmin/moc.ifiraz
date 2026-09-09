@@ -1190,9 +1190,57 @@ textarea {
 About
 </span>
 
+<div class="az-language-toggle">
+
+<button class="az-lang-btn active" onclick="azShowAbout('en')">
+English
+</button>
+
+<button class="az-lang-btn" onclick="azShowAbout('fa')">
+فارسی
+</button>
+
 </div>
 
-<div id="az-about-fa" class="az-about-section active" dir="rtl">
+</div>
+
+<div id="az-about-en" class="az-about-section active">
+
+<h1>
+Beyond Business
+</h1>
+
+<p class="az-about-lead">
+Outside business and operational systems, I’ve always been curious about one simple question: how things work. That curiosity extends across organizations, technology, people, systems, and life itself.
+</p>
+
+<p>
+Maybe that explains why work has never felt like just work to me. I genuinely enjoy solving problems, creating structure from complexity, and thinking through ideas. Building systems and improving them became more than a profession; somewhere along the way, it also became one of my hobbies.
+</p>
+
+<p>
+I tend to enjoy experiences more than destinations. Road trips, long drives, camping, and spending time with friends are some of my favorite ways to disconnect. Usually, the people in a trip matter more to me than where the trip actually ends.
+</p>
+
+<p>
+Poetry has always had a place in my life, especially Khayyam, Hafez, and Saadi. Music for me has never been about genre. My playlists can move from Mohammadreza Shajarian to David Gilmour, from The Beatles and Eric Clapton to Stromae and Sting.
+</p>
+
+<p>
+Technology has also been a long-standing interest. I strongly relate to Steve Jobs’ idea that computers are bicycles for the mind. I see technology as a tool that expands human capability and thinking. AI feels like another step in that direction.
+</p>
+
+<p>
+Outside work, I also enjoy Formula 1, puzzles, strategy and board games, collecting watches with Persian or Arabic dials, and meditation. Meditation, in particular, taught me that calmness and mental clarity are long-term investments rather than quick outcomes.
+</p>
+
+<p>
+At the center of all of these interests there is probably one common pattern: I simply enjoy exploring, learning, building, and experiencing new things.
+</p>
+
+</div>
+
+<div id="az-about-fa" class="az-about-section" dir="rtl">
 
 <h1>
 فراتر از کسب‌وکار
@@ -1230,7 +1278,33 @@ About
 
 </section>
 
-	
+<script>
+function azShowAbout(lang){
+
+const en=document.getElementById("az-about-en");
+const fa=document.getElementById("az-about-fa");
+const buttons=document.querySelectorAll(".az-lang-btn");
+
+if(lang==="en"){
+en.classList.add("active");
+fa.classList.remove("active");
+}else{
+fa.classList.add("active");
+en.classList.remove("active");
+}
+
+buttons.forEach(button=>button.classList.remove("active"));
+
+if(lang==="en"){
+buttons[0].classList.add("active");
+}else{
+buttons[1].classList.add("active");
+}
+
+}
+</script>
+
+
 </div><!-- .entry-content .clear -->
 
 	
