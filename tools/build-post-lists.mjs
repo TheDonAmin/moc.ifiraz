@@ -138,7 +138,7 @@ for (const t of TARGETS) {
   let html = source.slice(0, range[0]) + cards + '\n' + source.slice(range[1]);
   html = removeLoaderScript(html, t.containerId);
 
-  if (/Loading latest notes|Loading insights/.test(html)) {
+  if (/Loading latest notes|Loading insights|در حال بارگذاری یادداشت‌های اخیر/.test(html)) {
     console.error(t.out + ': placeholder survived.'); failed = true; continue;
   }
   if (/wp-json/.test(html)) {
