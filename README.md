@@ -42,6 +42,30 @@ node tools/serve.mjs
 Serves `docs/` on <http://localhost:4321>, and falls back to `404.html` the way
 GitHub Pages does.
 
+## Analytics
+
+The WordPress export shipped with a Matomo tracker pointed at a backend
+that's gone (`tools/apply-seo.mjs` strips it), so the site currently records
+no visit data at all. `tools/add-analytics.mjs` (run as part of the build)
+injects [GoatCounter](https://www.goatcounter.com/) instead — free, no
+cookies, no consent banner required — but only once it's configured:
+
+1. Sign up at <https://www.goatcounter.com/> (pick a site code, e.g.
+   `aminzarifi`) and verify the account by email.
+2. Put that code in `tools/seo.json` under `analytics.code`.
+3. Re-run `node tools/build.mjs` and commit the result — every page now
+   loads the tracking snippet.
+4. For the weekly report, create a read-only API token at
+   `https://<code>.goatcounter.com/settings/api`, then run:
+   ```
+   GOATCOUNTER_API_TOKEN=xxx node tools/weekly-report.mjs
+   ```
+   This compares the last 7 days to the 7 before them (pageviews, visitors,
+   top pages, referrers, browsers, locations) and writes the result to
+   `reports/` (gitignored — a local artifact, not part of the published
+   site). Data only exists from the day the code goes live, so the first
+   report won't have a full week to compare until the second week.
+
 ## Checks
 
 ```

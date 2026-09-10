@@ -12,3 +12,6 @@
 /*.zip
 
 node_modules/
+
+# Weekly analytics reports (tools/weekly-report.mjs) - local artifacts, not published
+/reports/

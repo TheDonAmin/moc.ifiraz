@@ -5,13 +5,19 @@
     "image": "https://aminzarifi.com/wp-content/uploads/2026/05/LinkedIn-Profile-scaled.jpg",
     "twitterCard": "summary_large_image"
   },
+  "analytics": {
+    "provider": "goatcounter",
+    "code": ""
+  },
   "person": {
     "name": "Amin Zarifi",
     "alternateName": "امین ظریفی",
     "jobTitle": "Director of Operations",
     "worksFor": "Snapp!Market",
     "email": "M.Amin.Zarifi@gmail.com",
-    "sameAs": ["https://linkedin.com/in/amin-zarifi"]
+    "sameAs": [
+      "https://linkedin.com/in/amin-zarifi"
+    ]
   },
   "pages": {
     "index.html": {

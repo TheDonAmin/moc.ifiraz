@@ -42,7 +42,11 @@ execFileSync("node", ["tools/relativize.mjs"], { stdio: "inherit" });
 step('adding JSON-LD structured data');
 execFileSync('node', ['tools/add-jsonld.mjs'], { stdio: 'inherit' });
 
-// --- 3d. redirects -----------------------------------------------------
+// --- 3d. analytics ----------------------------------------------------------
+step('adding analytics');
+execFileSync('node', ['tools/add-analytics.mjs'], { stdio: 'inherit' });
+
+// --- 3e. redirects -----------------------------------------------------
 // Some pages (e.g. the WordPress category archive) are only kept around
 // because another build step reads them as a data source - they duplicate a
 // nicer hand-built page and shouldn't be served as-is. Overwrite their
