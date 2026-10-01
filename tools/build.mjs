@@ -30,6 +30,10 @@ console.log(keep.length + ' file(s) copied');
 step('rendering post lists');
 execFileSync('node', ['tools/build-post-lists.mjs'], { stdio: 'inherit' });
 
+// --- 2b. media page (videos, talks, press) from tools/media.json ------------
+step('rendering media page');
+execFileSync('node', ['tools/build-media.mjs'], { stdio: 'inherit' });
+
 // --- 3. strip dead WordPress tags, add description + Open Graph -------------
 step('applying metadata');
 execFileSync('node', ['tools/apply-seo.mjs'], { stdio: 'inherit' });
@@ -41,6 +45,10 @@ execFileSync("node", ["tools/relativize.mjs"], { stdio: "inherit" });
 // --- 3c. structured data --------------------------------------------------
 step('adding JSON-LD structured data');
 execFileSync('node', ['tools/add-jsonld.mjs'], { stdio: 'inherit' });
+
+// --- 3c2. site-wide CSS ------------------------------------------------------
+step('adding site-wide CSS');
+execFileSync('node', ['tools/inject-global-css.mjs'], { stdio: 'inherit' });
 
 // --- 3d. redirects -----------------------------------------------------
 // Some pages (e.g. the WordPress category archive) are only kept around

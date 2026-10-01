@@ -22,6 +22,10 @@
       "type": "profile",
       "description": "Beyond operating systems and org charts: curiosity about how things work, road trips, poetry, and why building systems became a hobby as much as a job."
     },
+    "media/index.html": {
+      "type": "website",
+      "description": "Talks, panels, mentoring and press coverage featuring Amin Zarifi - Optime AI Conference, DigiNext, RubiKamp and more - with recordings you can watch on the page."
+    },
     "executive-profile/index.html": {
       "type": "profile",
       "description": "Career timeline of Amin Zarifi - from Industrial Engineering and startup consulting in 2014 to C-level operations leadership in Q-commerce and retail at scale."

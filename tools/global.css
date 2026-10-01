@@ -1,0 +1,19 @@
+/* Injected into every page by tools/inject-global-css.mjs */
+
+/* Eight menu items no longer fit on one line between the 922px desktop
+   breakpoint and ~1240px with Astra's default 1em side padding. */
+@media (min-width: 922px) and (max-width: 1240px) {
+  .ast-desktop .main-header-menu > .menu-item > .menu-link {
+    padding-left: .6em;
+    padding-right: .6em;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 922px) and (max-width: 1040px) {
+  .ast-desktop .main-header-menu > .menu-item > .menu-link {
+    padding-left: .4em;
+    padding-right: .4em;
+    font-size: 13px;
+  }
+}

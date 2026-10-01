@@ -72,6 +72,25 @@ function articleSchema(rel, html) {
   };
 }
 
+function videoSchemas() {
+  const media = JSON.parse(fs.readFileSync('tools/media.json', 'utf8'));
+  return media.videos.map((v) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: v.title.en,
+    description: v.description.en,
+    thumbnailUrl: domain + '/media/img/' + v.thumb,
+    uploadDate: v.uploadDate,
+    duration: v.iso,
+    embedUrl: v.provider === 'youtube'
+      ? 'https://www.youtube.com/embed/' + v.videoId
+      : 'https://www.aparat.com/video/video/embed/videohash/' + v.videoId + '/vt/frame',
+    url: v.watchUrl,
+    inLanguage: 'fa',
+    actor: { '@id': PERSON_ID },
+  }));
+}
+
 function inject(file, schemas) {
   let html = fs.readFileSync(file, 'utf8');
   if (html.includes('application/ld+json')) return false; // already has one - don't double up
@@ -87,6 +106,7 @@ function inject(file, schemas) {
 }
 
 const targets = [
+  { file: 'docs/media/index.html', build: () => [personSchema, ...videoSchemas()] },
   { file: 'docs/index.html', schemas: [websiteSchema, personSchema] },
   { file: 'docs/executive-profile/index.html', schemas: [personSchema] },
   { file: 'docs/what-can-ai-change-and-what-might-eventually-slow-it-down/index.html',

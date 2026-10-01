@@ -1,0 +1,217 @@
+{
+  "page": {
+    "en": {
+      "title": "Media & Appearances",
+      "lead": "Talks, panels, mentoring and press coverage - with the recordings you can watch right here.",
+      "watch": "Watch",
+      "appearances": "Talks, panels & mentoring",
+      "press": "In the press",
+      "elsewhere": "Find me elsewhere",
+      "play": "Play video",
+      "watchOn": "Watch on",
+      "minutes": "min"
+    },
+    "fa": {
+      "title": "رسانه و حضور عمومی",
+      "lead": "سخنرانی‌ها، پنل‌ها، منتورینگ و پوشش رسانه‌ای، همراه با ویدیوهایی که می‌توانید همین‌جا ببینید.",
+      "watch": "ویدیوها",
+      "appearances": "سخنرانی، پنل و منتورینگ",
+      "press": "در رسانه‌ها",
+      "elsewhere": "جاهای دیگر",
+      "play": "پخش ویدیو",
+      "watchOn": "تماشا در",
+      "minutes": "دقیقه"
+    }
+  },
+
+  "videos": [
+    {
+      "id": "yt-08Vy5_6rSnI",
+      "provider": "youtube",
+      "videoId": "08Vy5_6rSnI",
+      "thumb": "yt-08Vy5_6rSnI.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=08Vy5_6rSnI",
+      "uploadDate": "2024-11-23",
+      "date": "2024-11-13",
+      "minutes": 64,
+      "iso": "PT63M35S",
+      "title": {
+        "en": "Experience-Transfer Panel: Transformation in Supply Chain",
+        "fa": "پنل انتقال تجربه: تحول‌آفرینی در زنجیره تأمین"
+      },
+      "event": { "en": "DigiNext Experience Zone", "fa": "Experience Zone دیجی‌نکست" },
+      "description": {
+        "en": "A DigiNext talk on lessons from a career path in business and operations.",
+        "fa": "سخنرانی در دیجی‌نکست درباره‌ی درس‌هایی از مسیر حرفه‌ای در کسب‌وکار و عملیات."
+      }
+    },
+    {
+      "id": "yt-K8HNreFGDm8",
+      "provider": "youtube",
+      "videoId": "K8HNreFGDm8",
+      "thumb": "yt-K8HNreFGDm8.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=K8HNreFGDm8",
+      "uploadDate": "2024-09-22",
+      "date": "2024-09-22",
+      "minutes": 56,
+      "iso": "PT56M7S",
+      "title": {
+        "en": "Guest talk at the DigiNext Product Management Boot Camp",
+        "fa": "سخنرانی در بوت‌کمپ مدیریت محصول دیجی‌نکست"
+      },
+      "event": { "en": "DigiNext Academy", "fa": "آکادمی دیجی‌نکست" },
+      "description": {
+        "en": "A session for the students of DigiNext's Product Management Boot Camp.",
+        "fa": "جلسه‌ای برای شرکت‌کنندگان بوت‌کمپ مدیریت محصول دیجی‌نکست."
+      }
+    },
+    {
+      "id": "ap-vue1582",
+      "provider": "aparat",
+      "videoId": "vue1582",
+      "thumb": "aparat-vue1582.jpg",
+      "watchUrl": "https://www.aparat.com/v/vue1582",
+      "uploadDate": "2024-11-04",
+      "date": "2024-10-06",
+      "minutes": 38,
+      "iso": "PT37M44S",
+      "title": {
+        "en": "Culture: the Achilles' Heel of Development (panel)",
+        "fa": "پنل فرهنگ؛ پاشنه آشیل توسعه"
+      },
+      "event": { "en": "Optime \"Transformation in the Delivery Path\"", "fa": "رویداد «تحول در مسیر تحویل» آپتایم" },
+      "description": {
+        "en": "Panel on how organizational culture holds back digital transformation in Iranian logistics.",
+        "fa": "پنل درباره‌ی نقش فرهنگ سازمانی به‌عنوان مانع تحول دیجیتال در لجستیک ایران."
+      }
+    }
+  ],
+
+  "appearances": [
+    {
+      "date": "2025-06-30",
+      "role": { "en": "Speaker", "fa": "سخنران" },
+      "organizer": "RubiKamp",
+      "topic": { "en": "Ctrl + U: Tech Leaders in Tough Times", "fa": "Ctrl + U: رهبران فناوری در روزهای سخت" },
+      "description": {
+        "en": "Spoke to RubiKamp's student community about leading in tech through tough times.",
+        "fa": "سخنرانی برای جامعه‌ی دانشجویی RubiKamp درباره‌ی رهبری در حوزه‌ی فناوری در روزهای سخت."
+      },
+      "links": [
+        { "label": { "en": "Instagram post", "fa": "پست اینستاگرام" }, "url": "https://www.instagram.com/p/DLfv8-LI8aa/" }
+      ]
+    },
+    {
+      "date": "2025-05-08",
+      "role": { "en": "Judge & mentor", "fa": "داور و منتور" },
+      "organizer": "RubiKamp",
+      "topic": { "en": "RubiKamp Hackathon", "fa": "هکاتون RubiKamp" },
+      "description": {
+        "en": "Judged and mentored teams at the RubiKamp hackathon and received a certificate of appreciation.",
+        "fa": "داوری و منتورینگ تیم‌ها در هکاتون RubiKamp و دریافت لوح قدردانی."
+      },
+      "links": []
+    },
+    {
+      "date": "2025-03-05",
+      "role": { "en": "Instructor", "fa": "مدرس" },
+      "organizer": "Innovision Group",
+      "topic": { "en": "Product Management Boot Camp", "fa": "بوت‌کمپ مدیریت محصول" },
+      "description": {
+        "en": "Taught a session in Innovision's Product Management Boot Camp.",
+        "fa": "تدریس یک جلسه در بوت‌کمپ مدیریت محصول Innovision."
+      },
+      "links": [
+        { "label": { "en": "LinkedIn post", "fa": "پست لینکدین" }, "url": "https://www.linkedin.com/posts/innovisiongroup_%D9%81%D9%82%D8%B7-%DB%B7-%D8%B1%D9%88%D8%B2-%D8%AA%D8%A7-%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D9%88%D8%AA%DA%A9%D9%85%D9%BE-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%A7%DB%8C%D9%86%D9%88%D9%88%DB%8C%DA%98%D9%86-activity-7286042365549547520-8Rno" }
+      ]
+    },
+    {
+      "date": "2024-11-13",
+      "role": { "en": "Speaker", "fa": "سخنران" },
+      "organizer": { "en": "DigiNext", "fa": "دیجی‌نکست" },
+      "topic": { "en": "Experience Zone: Transformation in Supply Chain", "fa": "Experience Zone: تحول‌آفرینی در زنجیره تأمین" },
+      "description": {
+        "en": "An experience-transfer panel for students and entrepreneurs on transformation in the supply chain.",
+        "fa": "پنل انتقال تجربه برای دانشجویان و کارآفرینان درباره‌ی تحول‌آفرینی در زنجیره تأمین."
+      },
+      "videoId": "yt-08Vy5_6rSnI",
+      "links": [
+        { "label": { "en": "Event page", "fa": "صفحه‌ی رویداد" }, "url": "https://evand.com/events/%D9%BE%D9%86%D9%84-%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%D8%AA%D8%AD%D9%88%D9%84-%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C-%D8%AF%D8%B1-%D8%B2%D9%86%D8%AC%DB%8C%D8%B1%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-15861169" },
+        { "label": { "en": "Event poster", "fa": "پوستر رویداد" }, "url": "https://www.linkedin.com/feed/update/urn:li:activity:7261623992589991936/" },
+        { "label": { "en": "DigiNext", "fa": "دیجی‌نکست" }, "url": "https://diginext.ir/" }
+      ]
+    },
+    {
+      "date": "2024-10-06",
+      "role": { "en": "Panelist", "fa": "پنلیست" },
+      "organizer": { "en": "Optime", "fa": "آپتایم" },
+      "topic": { "en": "Optime AI Conference: Culture, the Achilles' Heel of Development", "fa": "رویداد «تحول در مسیر تحویل»: فرهنگ؛ پاشنه آشیل توسعه" },
+      "description": {
+        "en": "Panelist before about 300 CEOs, founders and C-level leaders of major e-commerce and logistics companies.",
+        "fa": "پنلیست در جمع حدود ۳۰۰ مدیرعامل، بنیان‌گذار و مدیر ارشد شرکت‌های بزرگ تجارت الکترونیک و لجستیک."
+      },
+      "videoId": "ap-vue1582",
+      "links": [
+        { "label": { "en": "Event page", "fa": "صفحه‌ی رویداد" }, "url": "https://evand.com/events/%D8%AA%D8%AD%D9%88%D9%84-%D8%AF%D8%B1-%D9%85%D8%B3%DB%8C%D8%B1-%D8%AA%D8%AD%D9%88%DB%8C%D9%84-87524001" },
+        { "label": { "en": "Event poster", "fa": "پوستر رویداد" }, "url": "https://www.instagram.com/p/C_8PNw7tOCQ/" },
+        { "label": { "en": "Optime on LinkedIn", "fa": "آپتایم در لینکدین" }, "url": "https://www.linkedin.com/company/optime-ai/posts/?feedView=all" }
+      ]
+    },
+    {
+      "date": null,
+      "dateLabel": { "en": "2024", "fa": "۱۴۰۳" },
+      "role": { "en": "Instructor", "fa": "مدرس" },
+      "organizer": { "en": "DigiNext", "fa": "دیجی‌نکست" },
+      "topic": { "en": "Product Management Boot Camp", "fa": "بوت‌کمپ مدیریت محصول" },
+      "description": {
+        "en": "Taught a session in DigiNext's Product Management Boot Camp.",
+        "fa": "تدریس یک جلسه در بوت‌کمپ مدیریت محصول دیجی‌نکست."
+      },
+      "videoId": "yt-K8HNreFGDm8",
+      "links": [
+        { "label": { "en": "Boot camp page", "fa": "صفحه‌ی بوت‌کمپ" }, "url": "https://diginext.ir/academy/products/%D9%BE%D9%86%D8%AC%D9%85%DB%8C%D9%86-%D8%A8%D9%88%D8%AA-%DA%A9%D9%85%D9%BE-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D8%AD%D8%B5%D9%88%D9%84" }
+      ]
+    }
+  ],
+
+  "press": [
+    {
+      "outlet": { "en": "Digiato", "fa": "دیجیاتو" },
+      "title": "معاون عملیاتی اسنپ‌مارکت: تحول دیجیتال بدون فهم «چرایی» ممکن نیست",
+      "description": {
+        "en": "Coverage of the Optime panel, where I argued that cheap fuel masks supply-chain inefficiency in Iranian logistics.",
+        "fa": "گزارش پنل آپتایم، جایی که توضیح دادم قیمت پایین سوخت ناکارآمدی زنجیره تأمین در لجستیک ایران را پنهان می‌کند."
+      },
+      "url": "https://digiato.com/iran-technology-news/snapp-market-logistics-panel-pr"
+    },
+    {
+      "outlet": { "en": "Eghtesadnews", "fa": "اقتصادنیوز" },
+      "title": "گزارش رویداد تحول در مسیر تحویل",
+      "description": {
+        "en": "Full report of the \"Transformation in the Delivery Path\" event, listing the culture panel I took part in.",
+        "fa": "گزارش کامل رویداد «تحول در مسیر تحویل» شامل پنل فرهنگ که در آن حضور داشتم."
+      },
+      "url": "https://www.eghtesadnews.com/%D8%A8%D8%AE%D8%B4-%D9%88%D8%A8-%DA%AF%D8%B1%D8%AF%DB%8C-65/679394-%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C%D8%AF%D8%A7%D8%AF-%D8%AA%D8%AD%D9%88%D9%84-%D8%AF%D8%B1-%D9%85%D8%B3%DB%8C%D8%B1-%D8%AA%D8%AD%D9%88%DB%8C%D9%84"
+    },
+    {
+      "outlet": { "en": "Eco Iran", "fa": "اکوایران" },
+      "title": "گزارش «رویداد تحول در مسیر تحویل»",
+      "description": {
+        "en": "Eco Iran's event report, covering the same panel and the other sessions of the day.",
+        "fa": "گزارش اکوایران از همین رویداد، شامل همین پنل و دیگر نشست‌های روز."
+      },
+      "url": "https://ecoiran.com/%D8%A8%D8%AE%D8%B4-%D9%88%D8%A8-%DA%AF%D8%B1%D8%AF%DB%8C-196/73625-%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C%D8%AF%D8%A7%D8%AF-%D8%AA%D8%AD%D9%88%D9%84-%D8%AF%D8%B1-%D9%85%D8%B3%DB%8C%D8%B1-%D8%AA%D8%AD%D9%88%DB%8C%D9%84"
+    }
+  ],
+
+  "elsewhere": [
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/amin-zarifi",
+      "description": {
+        "en": "Career updates, event posts and professional network.",
+        "fa": "به‌روزرسانی‌های حرفه‌ای، پست‌های رویدادها و شبکه‌ی حرفه‌ای."
+      }
+    }
+  ]
+}
